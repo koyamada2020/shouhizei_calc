@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- font awasome-->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <!-- my css -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- js読み込み -->
+    <script type="text/javascript" src="calc.js"></script>
+    <title>消費税計算</title>
+</head>
+<body>
+    <div class="header">
+        <h2 class="text-center">消費税計算</h2>
+    </div>
+    <div class="container">
+        <div class="display">
+            <div class="row">
+                <div class="col-4">
+                    <p>消費税率</p>
+                </div>
+                <div class="col-8">
+                    <input id="tax" type="number" value="10">
+                    %
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <p>税込</p>
+                </div>
+                <div class="col-8">
+                    <span id="taxon">0</span>
+                    円
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <p>税抜</p>
+                </div>
+                <div class="col-8">
+                    <span id="taxoff">0</span>
+                    円
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <p>価格</p>
+                </div>
+                <div class="col-8">
+                    <input id="price" type="number">
+                    円
+                </div>
+            </div>
+        </div>
+        <div class="calc-block">
+            <table class="table">
+                <tr>
+                    <th id="1">1</th>
+                    <th id="2">2</th>
+                    <th id="3">3</th>
+                </tr>
+                <tr>
+                    <th id="4">4</th>
+                    <th id="5">5</th>
+                    <th id="6">6</th>
+                </tr>
+                <tr>
+                    <th id="7">7</th>
+                    <th id="8">8</th>
+                    <th id="9">9</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th id="0">0</th>
+                    <th id="backspace">X</th>
+                </tr>
+            </table>
+            <div class="btn-group">
+                <div id="taxoff_calc" class="btn btn-secondary">税抜き</div>
+                <div id="taxon_calc" class="btn btn-secondary">税込み</div>
+                <div id="clear" class="btn btn-secondary">クリア</div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    <!---->
+</body>
+</html>

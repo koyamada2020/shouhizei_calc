@@ -1,0 +1,38 @@
+
+html {
+    font-size: 20px;
+}
+
+.display {
+    padding-top: 20px;
+}
+
+.calc-block {
+    text-align: center;
+    margin: 10px auto;
+}
+
+div table tr {
+    font-size: 30px;
+}
+
+table tr th:active {
+    background: #c2c2c2;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .2);
+}
+
+#tax {
+    width: 8em;
+}
+
+#price {
+    width: 8em
+}
+
+/* PC用の表示 */
+@media (min-width: 1200px) {
+    .container {
+        width: 800px;
+    }
+}
+
